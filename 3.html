@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的生活照</title>
+        <style>
+            body{
+                width: 500px;
+                height: 600px;
+                margin: auto;
+                position: absolute;
+                top: 100px;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding:100px;
+                background-color: lightpink;
+            }
+            .container{
+                position: relative;
+                width: 410px;
+                min-height:420px;
+                /*background: whitesmoke;*/
+                background:url("../2/3.jpg");
+                background-repeat: round;
+            }
+            .container h1{
+                width: 400px;
+                height: 70px;
+                color:  #E9967A;
+                text-align: center;
+            }
+            ul{
+                list-style: none;
+                float: right;
+                margin-right: 20px;
+                margin-bottom: 100px;
+            }
+            .big{
+                width: 240px;
+                height: 240px;
+                border: 1px dashed gray;
+                border-radius: 5px;
+                box-shadow: 2px 2px 5px gray;
+                position: absolute;
+                top:90px;
+                left: 50px;
+                display: none;
+            }
+            /*第一个big*/
+            .first{
+                /*z-index: 8888;*/
+                display: block;
+            }
+            
+            .small{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                box-shadow: 2px 2px 5px #808080;
+                /*透明度*/
+                opacity: 0.4;
+                
+            }
+            .container .small:hover+.big{
+                display: block;
+            }
+            
+            .one{
+                opacity: 1;
+            }
+            
+            .container ul:hover .small{
+                opacity: 0.4;
+            }
+            .container ul li .small:hover{
+                opacity: 1;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>我的生活照</h1>
+            <ul>
+                <li>
+                    <img src="微信图片_20211005205411.jpg" class="small one" />
+                    <img src="微信图片_20211005205411.jpg" class="big  first"/>
+                </li>
+                <li>
+                    <img src="微信图片_20211005205416.jpg" class="small" />
+                    <img src="微信图片_20211005205416.jpg" class="big"/>
+                </li>
+                <li>
+                    <img src="微信图片_20211005205421.jpg" class="small" />
+                    <img src="微信图片_20211005205421.jpg" class="big"/>
+                </li>
+                <li>
+                    <img src="微信图片_20211005205426.jpg" class="small" />
+                    <img src="微信图片_20211005205426.jpg" class="big"/>
+                </li>
+            </ul>
+        </div>
+        <a href="index.html">返回上一页</a>
+    </body>
+</html>

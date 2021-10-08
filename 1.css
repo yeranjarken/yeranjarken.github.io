@@ -1,0 +1,28 @@
+body {
+ width: 960px;
+ margin-left: auto;
+ margin-right: auto;
+ border-width: 1px;
+ border-style:unset ;
+ border-color: gray;
+ border-radius: 5px;
+ text-align:center;
+}
+h1{
+background: #EEE url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAHklEQVQImWNkYGBgYGD4//8/A5wF5SBYyAr+//8PAPOCFO0Q2zq7AAAAAElFTkSuQmCC) repeat;
+text-shadow: 5px -5px black, 4px -4px white;
+font-weight: bold;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text ;
+font-size: 36px;
+}
+p{
+	text-shadow: 5px 5px 5px #FF0000;
+	font-size: 24px;
+}
+table{
+	width:200px;
+     height:200px;
+     border:10px solid lightblue;
+     margin:0 auto;
+}
